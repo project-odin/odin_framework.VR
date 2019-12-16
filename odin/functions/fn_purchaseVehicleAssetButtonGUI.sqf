@@ -26,7 +26,6 @@ _selectedAsset = _vehicleAssetClassNames select _index;
 if (side _player == west) then {
 	_spawnLocation = "spawn_asset_west";
 	_side = west;
-	 ["IN WEST %1, %2", _spawnLocation, _side] call BIS_fnc_logFormat;
 	 _result = [_selectedAsset, _spawnLocation, _side] call odin_fnc_purchaseVehicleAsset;
 
 };
